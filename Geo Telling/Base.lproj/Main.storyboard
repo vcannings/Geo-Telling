@@ -62,8 +62,50 @@
                     <view key="view" contentMode="scaleToFill" id="GAJ-vL-w4d">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND.png" translatesAutoresizingMaskIntoConstraints="NO" id="xcE-ai-Kbt">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nZ-hx-j30">
+                                <rect key="frame" x="209" y="126" width="184" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to Geo Telling!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box.png" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-fT-GSj">
+                                <rect key="frame" x="45" y="64" width="510" height="487"/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4nZ-hx-j30" firstAttribute="centerX" secondItem="xcE-ai-Kbt" secondAttribute="centerX" constant="1" id="48s-Hy-rih"/>
+                            <constraint firstItem="JmC-fT-GSj" firstAttribute="leading" secondItem="GAJ-vL-w4d" secondAttribute="leadingMargin" constant="25" id="FJa-F6-vWD">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="xcE-ai-Kbt" firstAttribute="top" secondItem="UfX-iM-s3o" secondAttribute="bottom" id="FTO-pn-icw"/>
+                            <constraint firstItem="xcE-ai-Kbt" firstAttribute="leading" secondItem="GAJ-vL-w4d" secondAttribute="leadingMargin" constant="-20" id="LO6-WX-huH"/>
+                            <constraint firstItem="p2s-d4-54g" firstAttribute="top" secondItem="JmC-fT-GSj" secondAttribute="bottom" id="RLY-dl-0oc">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="JmC-fT-GSj" firstAttribute="top" secondItem="UfX-iM-s3o" secondAttribute="bottom" id="bvB-iQ-X9O">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="xcE-ai-Kbt" secondAttribute="trailing" constant="-20" id="dbC-xV-wUH"/>
+                            <constraint firstItem="4nZ-hx-j30" firstAttribute="centerY" secondItem="GAJ-vL-w4d" secondAttribute="centerY" constant="-164.5" id="hiZ-TX-yr8"/>
+                            <constraint firstItem="p2s-d4-54g" firstAttribute="top" secondItem="xcE-ai-Kbt" secondAttribute="bottom" id="poh-ww-s8P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JmC-fT-GSj" secondAttribute="trailing" constant="25" id="zD8-Qt-KjA">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="kCk-OV-39i"/>
                 </viewController>
@@ -379,6 +421,7 @@
         <image name="BACKGROUND.png" width="640" height="909"/>
         <image name="BOOK ONE.png" width="80" height="200"/>
         <image name="BOOK TWO.png" width="80" height="200"/>
+        <image name="Box.png" width="640" height="640"/>
         <image name="FILLER BOOK TWO.png" width="179" height="80"/>
         <image name="FILLER BOOK.png" width="30" height="200"/>
         <image name="FILLER BOOKS TWO.png" width="200" height="160"/>

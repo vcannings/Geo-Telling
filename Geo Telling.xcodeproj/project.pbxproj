@@ -53,6 +53,7 @@
 		1AD7E1C51C0CF42200FEC07D /* FILLER BOOKS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7E1C41C0CF42200FEC07D /* FILLER BOOKS.png */; };
 		1AD7E1C71C0CF85D00FEC07D /* FILLER BOOK.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7E1C61C0CF85D00FEC07D /* FILLER BOOK.png */; };
 		1AD7E1C91C0D02D200FEC07D /* SHELF.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD7E1C81C0D02D200FEC07D /* SHELF.png */; };
+		A330C2AB1C19945900B29527 /* Box.png in Resources */ = {isa = PBXBuildFile; fileRef = A330C2AA1C19945900B29527 /* Box.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,7 @@
 		1AD7E1C41C0CF42200FEC07D /* FILLER BOOKS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FILLER BOOKS.png"; sourceTree = "<group>"; };
 		1AD7E1C61C0CF85D00FEC07D /* FILLER BOOK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FILLER BOOK.png"; sourceTree = "<group>"; };
 		1AD7E1C81C0D02D200FEC07D /* SHELF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SHELF.png; sourceTree = "<group>"; };
+		A330C2AA1C19945900B29527 /* Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Box.png; path = ../../Box.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				1A77065A1C0722E8002DCD24 /* Main.storyboard */,
 				1A77065D1C0722E8002DCD24 /* Assets.xcassets */,
 				1A4497311C0780FD00D0E2D5 /* nav.png */,
+				A330C2AA1C19945900B29527 /* Box.png */,
 				1AD7E1C01C0CF29B00FEC07D /* BACKGROUND.png */,
 				1AD7E1B81C0CF05B00FEC07D /* BOOK FOUR.png */,
 				1AD7E1B91C0CF05B00FEC07D /* BOOK THREE.png */,
@@ -382,6 +385,7 @@
 				1A4497331C0780FD00D0E2D5 /* nav.png in Resources */,
 				1AD7E1C51C0CF42200FEC07D /* FILLER BOOKS.png in Resources */,
 				1A4497201C0773EA00D0E2D5 /* 1024x1024.psd in Resources */,
+				A330C2AB1C19945900B29527 /* Box.png in Resources */,
 				1A4497281C0775AE00D0E2D5 /* 40x40.png in Resources */,
 				1A381D861C0E48CE009C33E5 /* PAGE NINE.png in Resources */,
 				1A77065C1C0722E8002DCD24 /* Main.storyboard in Resources */,
