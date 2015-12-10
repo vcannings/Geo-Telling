@@ -44,19 +44,20 @@ class StoryViewController: UIViewController {
     }
     
     func rightSwipe() {
-        if imageIndex < storyImage.count - 1 {
-            imageIndex++
+        if imageIndex > 0 {
+            imageIndex--
             updateImage()
-             print("Right swipe")
+            print("Right swipe")
         }
     }
    
     func leftSwipe() {
-        if imageIndex > 0 {
-            imageIndex--
+        if imageIndex < storyImage.count - 1 {
+            imageIndex++
             updateImage()
             print("Left swipe")
         }
+        
     }
 
     
