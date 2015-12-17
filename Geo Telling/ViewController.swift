@@ -56,10 +56,10 @@ extension ViewController: CLLocationManagerDelegate {
 		self.bookButton.hidden = true
 		bookImage.image = UIImage(named: "BOOK FOUR.png")
 		navigationController?.popToRootViewControllerAnimated(true)
-		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the region of the Geocache and can no longer view the story. Return to it's location to continue reading.", preferredStyle: UIAlertControllerStyle.Alert)
+		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the appropriate region of the story and can no longer view it. Return to it's location to continue reading (displayed beneath the book on the shelf).", preferredStyle: UIAlertControllerStyle.Alert)
 		
 		
-		refreshAlert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: { (action: UIAlertAction!) in
+		refreshAlert.addAction(UIAlertAction(title: "Dismiss", style: .Default, handler: { (action: UIAlertAction!) in
 			
 			refreshAlert .dismissViewControllerAnimated(true, completion: nil)
 			
@@ -77,7 +77,7 @@ extension ViewController: CLLocationManagerDelegate {
 		let refreshAlert = UIAlertController(title: "New Story Found!", message: "You have discovered a new story! You can view it by clicking it on your Bookshelf.", preferredStyle: UIAlertControllerStyle.Alert)
 		
 		
-		refreshAlert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: { (action: UIAlertAction!) in
+		refreshAlert.addAction(UIAlertAction(title: "Dismiss", style: .Default, handler: { (action: UIAlertAction!) in
 			
 			refreshAlert .dismissViewControllerAnimated(true, completion: nil)
 			
