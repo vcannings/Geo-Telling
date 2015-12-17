@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qha-hY-OuU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qha-hY-OuU">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +19,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHa-3y-S6k">
                                 <rect key="frame" x="223" y="152" width="154" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Link to Locations View"/>
                                 <connections>
                                     <segue destination="eIw-Aq-NTd" kind="show" identifier="locationTransition" id="EUr-X8-3Wa"/>
@@ -27,14 +26,12 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yU2-w5-BIn">
                                 <rect key="frame" x="236" y="201" width="129" height="30"/>
-                                <animations/>
                                 <state key="normal" title="Link to About View"/>
                                 <connections>
                                     <segue destination="ys9-xb-b1j" kind="show" id="63t-JP-Azg"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="yU2-w5-BIn" firstAttribute="centerX" secondItem="FHa-3y-S6k" secondAttribute="centerX" id="3GE-tu-dyc"/>
@@ -80,31 +77,15 @@
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Box.png" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-fT-GSj">
-                                <rect key="frame" x="45" y="64" width="510" height="487"/>
-                            </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="4nZ-hx-j30" firstAttribute="centerX" secondItem="xcE-ai-Kbt" secondAttribute="centerX" constant="1" id="48s-Hy-rih"/>
-                            <constraint firstItem="JmC-fT-GSj" firstAttribute="leading" secondItem="GAJ-vL-w4d" secondAttribute="leadingMargin" constant="25" id="FJa-F6-vWD">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
                             <constraint firstItem="xcE-ai-Kbt" firstAttribute="top" secondItem="UfX-iM-s3o" secondAttribute="bottom" id="FTO-pn-icw"/>
                             <constraint firstItem="xcE-ai-Kbt" firstAttribute="leading" secondItem="GAJ-vL-w4d" secondAttribute="leadingMargin" constant="-20" id="LO6-WX-huH"/>
-                            <constraint firstItem="p2s-d4-54g" firstAttribute="top" secondItem="JmC-fT-GSj" secondAttribute="bottom" id="RLY-dl-0oc">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
-                            <constraint firstItem="JmC-fT-GSj" firstAttribute="top" secondItem="UfX-iM-s3o" secondAttribute="bottom" id="bvB-iQ-X9O">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="xcE-ai-Kbt" secondAttribute="trailing" constant="-20" id="dbC-xV-wUH"/>
                             <constraint firstItem="4nZ-hx-j30" firstAttribute="centerY" secondItem="GAJ-vL-w4d" secondAttribute="centerY" constant="-164.5" id="hiZ-TX-yr8"/>
                             <constraint firstItem="p2s-d4-54g" firstAttribute="top" secondItem="xcE-ai-Kbt" secondAttribute="bottom" id="poh-ww-s8P"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JmC-fT-GSj" secondAttribute="trailing" constant="25" id="zD8-Qt-KjA">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="kCk-OV-39i"/>
@@ -127,10 +108,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-GI-C5L">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <animations/>
                             </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aXM-GI-C5L" firstAttribute="top" secondItem="mYc-lU-HzC" secondAttribute="bottom" id="0fz-vx-PUS"/>
@@ -161,7 +140,6 @@
                     <view key="view" contentMode="scaleToFill" id="AHk-i4-J5S">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Locations" id="DOO-Vj-tzo">
@@ -186,32 +164,27 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND.png" translatesAutoresizingMaskIntoConstraints="NO" id="D4G-zj-Wdt">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHELF.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Q2-mk-AG3">
                                 <rect key="frame" x="0.0" y="525" width="600" height="58"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="X9h-hN-OEq"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHELF.png" translatesAutoresizingMaskIntoConstraints="NO" id="3yJ-Bd-wap">
                                 <rect key="frame" x="0.0" y="233" width="600" height="58"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="e43-R6-ySt"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHELF.png" translatesAutoresizingMaskIntoConstraints="NO" id="ypm-Ob-dox">
                                 <rect key="frame" x="0.0" y="379" width="600" height="58"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="9j5-ue-l3P"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FILLER BOOKS.png" translatesAutoresizingMaskIntoConstraints="NO" id="i99-gw-q3O">
                                 <rect key="frame" x="276" y="113" width="48" height="120"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="NSw-Re-XnV"/>
                                     <constraint firstAttribute="width" constant="48" id="lfo-Bu-rhN"/>
@@ -219,7 +192,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="bBv-qu-A06">
                                 <rect key="frame" x="102" y="113" width="48" height="120"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="BFU-TC-Ut3"/>
                                     <constraint firstAttribute="height" constant="120" id="iCk-EB-47B"/>
@@ -227,7 +199,6 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vqu-eo-ztq">
                                 <rect key="frame" x="449" y="113" width="48" height="120"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Bbb-tZ-E5S"/>
                                     <constraint firstAttribute="width" constant="48" id="HM5-OP-P1D"/>
@@ -235,15 +206,12 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="jfm-Wl-okM">
                                 <rect key="frame" x="102" y="405" width="48" height="120"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="PC8-60-Ami">
                                 <rect key="frame" x="449" y="405" width="48" height="120"/>
-                                <animations/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ct7-Qe-nCc">
                                 <rect key="frame" x="102" y="113" width="48" height="120"/>
-                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="Mtw-gl-1WZ"/>
                                     <constraint firstAttribute="width" constant="48" id="r5f-z1-N4r"/>
@@ -255,22 +223,17 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PrC-YC-MOz">
                                 <rect key="frame" x="276" y="259" width="48" height="120"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FILLER BOOK TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="6NX-7F-z4m">
                                 <rect key="frame" x="74" y="319" width="105" height="60"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FILLER BOOKS TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="5xy-fi-a1O">
                                 <rect key="frame" x="401" y="259" width="114" height="120"/>
-                                <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FILLER BOOK.png" translatesAutoresizingMaskIntoConstraints="NO" id="TZO-nw-gbI">
                                 <rect key="frame" x="284" y="405" width="32" height="120"/>
-                                <animations/>
                             </imageView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="i99-gw-q3O" firstAttribute="centerX" secondItem="3yJ-Bd-wap" secondAttribute="centerX" id="1Gi-O3-bgC"/>
@@ -364,7 +327,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="zyx-f5-b0G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -385,7 +347,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VzC-PS-M3S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -405,7 +366,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mmY-By-Hxr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -421,7 +381,6 @@
         <image name="BACKGROUND.png" width="640" height="909"/>
         <image name="BOOK ONE.png" width="80" height="200"/>
         <image name="BOOK TWO.png" width="80" height="200"/>
-        <image name="Box.png" width="640" height="640"/>
         <image name="FILLER BOOK TWO.png" width="179" height="80"/>
         <image name="FILLER BOOK.png" width="30" height="200"/>
         <image name="FILLER BOOKS TWO.png" width="200" height="160"/>
