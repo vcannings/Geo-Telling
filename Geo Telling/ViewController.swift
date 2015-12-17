@@ -55,13 +55,50 @@ extension ViewController: CLLocationManagerDelegate {
 		print("Leaving \(region.identifier)")
 		self.bookButton.hidden = true
 		bookImage.image = UIImage(named: "BOOK FOUR.png")
-		//navigationController?.popToRootViewControllerAnimated(true)
-	}
+		navigationController?.popToRootViewControllerAnimated(true)
+		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the region of the Geocache and can no longer view the story. Return to it's location to continue reading.", preferredStyle: UIAlertControllerStyle.Alert)
+		
+		
+		refreshAlert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: { (action: UIAlertAction!) in
+			
+			refreshAlert .dismissViewControllerAnimated(true, completion: nil)
+			
+			
+		}))
+		
+		presentViewController(refreshAlert, animated: true, completion: nil)
+		
+		}
+	
 	
 	func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
 		print("Entering \(region.identifier)")
 		self.bookButton.hidden = false
+		let refreshAlert = UIAlertController(title: "New Story Found!", message: "You have discovered a new story! You can view it by clicking it on your Bookshelf.", preferredStyle: UIAlertControllerStyle.Alert)
+		
+		
+		refreshAlert.addAction(UIAlertAction(title: "Okay", style: .Default, handler: { (action: UIAlertAction!) in
+			
+			refreshAlert .dismissViewControllerAnimated(true, completion: nil)
+			
+			
+		}))
+		
+		presentViewController(refreshAlert, animated: true, completion: nil)
 	}
 
 	
 }
+
+
+
+
+
+
+
+
+
+		
+
+
+	
