@@ -56,7 +56,7 @@ extension ViewController: CLLocationManagerDelegate {
 		print("Leaving \(region.identifier)")
 		self.bookButton.hidden = true
 		bookImage.image = UIImage(named: "BOOK FOUR.png")
-		navigationController?.popToRootViewControllerAnimated(true)
+		//navigationController?.popToRootViewControllerAnimated(true)
 		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the appropriate region of the story and can no longer view it. Return to it's location to continue reading (displayed beneath the book on the shelf).", preferredStyle: UIAlertControllerStyle.Alert)
 		
 		

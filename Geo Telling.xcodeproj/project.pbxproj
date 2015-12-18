@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0136771C2461010029FE1E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0136761C2461010029FE1E /* info.png */; };
 		1A381D781C0E2D07009C33E5 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A381D771C0E2D07009C33E5 /* StoryViewController.swift */; };
 		1A381D7A1C0E346C009C33E5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A381D791C0E346C009C33E5 /* LocationViewController.swift */; };
 		1A381D851C0E48CE009C33E5 /* PAGE TEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A381D7B1C0E48CE009C33E5 /* PAGE TEN.png */; };
@@ -73,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0136761C2461010029FE1E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 		1A381D771C0E2D07009C33E5 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		1A381D791C0E346C009C33E5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		1A381D7B1C0E48CE009C33E5 /* PAGE TEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PAGE TEN.png"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				1A77065A1C0722E8002DCD24 /* Main.storyboard */,
 				1A77065D1C0722E8002DCD24 /* Assets.xcassets */,
 				1A4497311C0780FD00D0E2D5 /* nav.png */,
+				1A0136761C2461010029FE1E /* info.png */,
 				1AD7E1C01C0CF29B00FEC07D /* BACKGROUND.png */,
 				1AD7E1B81C0CF05B00FEC07D /* BOOK FOUR.png */,
 				1AD7E1B91C0CF05B00FEC07D /* BOOK THREE.png */,
@@ -378,6 +381,7 @@
 				1A44971B1C0773EA00D0E2D5 /* 120x120.png in Resources */,
 				1A44971F1C0773EA00D0E2D5 /* 1024x1024.png in Resources */,
 				1A4497221C0774B500D0E2D5 /* 58x58.png in Resources */,
+				1A0136771C2461010029FE1E /* info.png in Resources */,
 				1A44971A1C0773EA00D0E2D5 /* 76x76.png in Resources */,
 				1A4497331C0780FD00D0E2D5 /* nav.png in Resources */,
 				1AD7E1C51C0CF42200FEC07D /* FILLER BOOKS.png in Resources */,

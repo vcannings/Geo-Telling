@@ -305,8 +305,13 @@
                             <constraint firstItem="hE8-uh-XXd" firstAttribute="top" secondItem="0Q2-mk-AG3" secondAttribute="bottom" constant="-32" id="zpk-aS-sf1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Bookshelf" id="nEe-zc-5Do">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="5hW-DS-IWV"/>
+                    <navigationItem key="navigationItem" title="Bookshelf" id="dc9-O3-kQt">
+                        <barButtonItem key="rightBarButtonItem" image="info.png" id="bOX-Vd-k02">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="DcG-vj-b6d" kind="show" id="cyy-J0-cIk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bookButton" destination="Ct7-Qe-nCc" id="Yjn-bO-F9t"/>
@@ -317,6 +322,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoL-Wt-AI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="813" y="-413"/>
+        </scene>
+        <!--Book Guide-->
+        <scene sceneID="Ko2-6p-6ze">
+            <objects>
+                <viewController id="DcG-vj-b6d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YYq-kL-cU7"/>
+                        <viewControllerLayoutGuide type="bottom" id="s6I-fG-KZV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dnb-6h-Oiv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Book Guide" id="Yfj-yi-9aC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uz4-hj-jb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498" y="-416"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tyk-e2-CIP">
@@ -385,6 +409,7 @@
         <image name="FILLER BOOKS.png" width="82" height="210"/>
         <image name="SHELF.png" width="640" height="89"/>
         <image name="book.png" width="30" height="30"/>
+        <image name="info.png" width="30" height="30"/>
         <image name="nav.png" width="30" height="30"/>
     </resources>
 </document>
