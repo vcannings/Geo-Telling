@@ -7,7 +7,7 @@ class ViewController: UIViewController {
 
 @IBOutlet weak var bookButton: UIButton!
 @IBOutlet weak var bookImage: UIImageView!
-
+@IBOutlet weak var shelfLabel: UILabel!
 	
 	let locationManager = CLLocationManager()
 	
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		self.bookButton.hidden = true
+		self.shelfLabel.hidden = true
 		
 		locationManager.requestAlwaysAuthorization()
 		locationManager.delegate = self
@@ -74,6 +75,7 @@ extension ViewController: CLLocationManagerDelegate {
 	func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
 		print("Entering \(region.identifier)")
 		self.bookButton.hidden = false
+		self.shelfLabel.hidden = false
 		let refreshAlert = UIAlertController(title: "New Story Found!", message: "You have discovered a new story! You can view it by clicking it on your Bookshelf.", preferredStyle: UIAlertControllerStyle.Alert)
 		
 		

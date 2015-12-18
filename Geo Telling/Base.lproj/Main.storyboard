@@ -217,6 +217,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FILLER BOOK.png" translatesAutoresizingMaskIntoConstraints="NO" id="TZO-nw-gbI">
                                 <rect key="frame" x="284" y="405" width="32" height="120"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bournemouth Pier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jju-vD-6Oo">
+                                <rect key="frame" x="55" y="233" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -240,8 +247,12 @@
                             <constraint firstItem="TZO-nw-gbI" firstAttribute="leading" secondItem="PrC-YC-MOz" secondAttribute="leading" constant="8" id="BzZ-jd-sRX">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="jju-vD-6Oo" firstAttribute="centerX" secondItem="Ct7-Qe-nCc" secondAttribute="centerX" id="Ex7-bc-tar"/>
                             <constraint firstItem="bBv-qu-A06" firstAttribute="bottom" secondItem="i99-gw-q3O" secondAttribute="bottom" id="F6S-AD-Rdv"/>
                             <constraint firstItem="jfm-Wl-okM" firstAttribute="top" secondItem="TZO-nw-gbI" secondAttribute="top" id="Fev-1B-cgd"/>
+                            <constraint firstItem="jju-vD-6Oo" firstAttribute="leading" secondItem="tlR-2q-9ig" secondAttribute="leadingMargin" constant="35" id="Ff9-Zt-cM6">
+                                <variation key="widthClass=compact" constant="-15"/>
+                            </constraint>
                             <constraint firstItem="PrC-YC-MOz" firstAttribute="leading" secondItem="i99-gw-q3O" secondAttribute="leading" id="H5t-Up-uMf">
                                 <variation key="widthClass=compact" constant="9"/>
                             </constraint>
@@ -252,7 +263,9 @@
                             <constraint firstItem="bBv-qu-A06" firstAttribute="top" secondItem="Vqu-eo-ztq" secondAttribute="top" id="QIR-II-r7U"/>
                             <constraint firstItem="bBv-qu-A06" firstAttribute="top" secondItem="i99-gw-q3O" secondAttribute="top" id="QM1-fa-fXR"/>
                             <constraint firstItem="TZO-nw-gbI" firstAttribute="top" secondItem="PrC-YC-MOz" secondAttribute="bottom" constant="26" id="SnS-Qk-X9J"/>
+                            <constraint firstItem="jju-vD-6Oo" firstAttribute="top" secondItem="3yJ-Bd-wap" secondAttribute="top" id="Tuo-A6-XOd"/>
                             <constraint firstItem="D4G-zj-Wdt" firstAttribute="top" secondItem="IDb-Bp-amc" secondAttribute="bottom" id="U8t-qF-Jhg"/>
+                            <constraint firstItem="6NX-7F-z4m" firstAttribute="top" secondItem="jju-vD-6Oo" secondAttribute="bottom" constant="65" id="UkD-7z-hdn"/>
                             <constraint firstItem="6NX-7F-z4m" firstAttribute="top" secondItem="PrC-YC-MOz" secondAttribute="top" constant="60" id="UkL-wn-2tl"/>
                             <constraint firstItem="PC8-60-Ami" firstAttribute="leading" secondItem="5xy-fi-a1O" secondAttribute="leading" constant="48" id="Wci-Nu-nxd">
                                 <variation key="widthClass=compact" constant="66"/>
@@ -298,6 +311,7 @@
                     <connections>
                         <outlet property="bookButton" destination="Ct7-Qe-nCc" id="Yjn-bO-F9t"/>
                         <outlet property="bookImage" destination="bBv-qu-A06" id="g18-cV-BIM"/>
+                        <outlet property="shelfLabel" destination="jju-vD-6Oo" id="iWZ-CD-bu9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoL-Wt-AI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
