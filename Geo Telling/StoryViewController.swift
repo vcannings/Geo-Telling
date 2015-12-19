@@ -3,7 +3,8 @@ import MapKit
 import CoreLocation
 
 class StoryViewController: UIViewController {
-	@IBOutlet weak var completeButton: UIButton!
+
+@IBOutlet weak var completeButton: UIButton!
 	
 	
 	var name: String!
@@ -37,10 +38,17 @@ class StoryViewController: UIViewController {
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: "leftSwipe")
         leftSwipe.direction = .Left
         view.addGestureRecognizer(leftSwipe)
-        
-		print(name)
-		
+        		
 		imageView.image = storyImage.first
+		
+	}
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		if segue.identifier == "completeTransition" {
+			let vc = segue.destinationViewController as! ViewController
+			vc.name = "Complete"
+		}
 		
 	}
     

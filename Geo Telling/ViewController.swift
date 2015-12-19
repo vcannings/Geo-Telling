@@ -7,13 +7,23 @@ class ViewController: UIViewController {
 
 @IBOutlet weak var bookButton: UIButton!
 @IBOutlet weak var bookImage: UIImageView!
-	@IBOutlet weak var shelfLabel: UIImageView!
+@IBOutlet weak var shelfLabel: UIImageView!
+
+	var name: String! = "Incomplete"
 
 	
 	let locationManager = CLLocationManager()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		
+		if name == "Complete" {
+			print(name)
+		}
+		else {
+			
+		}
 		
 		self.bookButton.hidden = true
 		self.shelfLabel.hidden = true
@@ -33,7 +43,7 @@ class ViewController: UIViewController {
 		
 		if segue.identifier == "geocacheTransition" {
 			let vc = segue.destinationViewController as! StoryViewController
-			vc.name = "Verity"
+			vc.name = "Incomplete"
 		}
 		
 	}
