@@ -38,6 +38,7 @@
 		1A4497381C07946F00D0E2D5 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4497371C07946F00D0E2D5 /* NavigationViewController.swift */; };
 		1A44973A1C07B81700D0E2D5 /* BournemouthLoop.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 1A4497391C07B81700D0E2D5 /* BournemouthLoop.gpx */; };
 		1A46B9081C25E7C800ACB3F1 /* LABEL.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A46B9071C25E7C800ACB3F1 /* LABEL.png */; };
+		1A46B90A1C25EBA800ACB3F1 /* LABEL TWO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A46B9091C25EBA800ACB3F1 /* LABEL TWO.png */; };
 		1A7706571C0722E8002DCD24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7706561C0722E8002DCD24 /* AppDelegate.swift */; };
 		1A7706591C0722E8002DCD24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7706581C0722E8002DCD24 /* ViewController.swift */; };
 		1A77065C1C0722E8002DCD24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A77065A1C0722E8002DCD24 /* Main.storyboard */; };
@@ -112,6 +113,7 @@
 		1A4497371C07946F00D0E2D5 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		1A4497391C07B81700D0E2D5 /* BournemouthLoop.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = BournemouthLoop.gpx; sourceTree = "<group>"; };
 		1A46B9071C25E7C800ACB3F1 /* LABEL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LABEL.png; sourceTree = "<group>"; };
+		1A46B9091C25EBA800ACB3F1 /* LABEL TWO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LABEL TWO.png"; sourceTree = "<group>"; };
 		1A7706531C0722E8002DCD24 /* Geo Telling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Geo Telling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7706561C0722E8002DCD24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7706581C0722E8002DCD24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				1A77065A1C0722E8002DCD24 /* Main.storyboard */,
 				1A77065D1C0722E8002DCD24 /* Assets.xcassets */,
 				1A46B9071C25E7C800ACB3F1 /* LABEL.png */,
+				1A46B9091C25EBA800ACB3F1 /* LABEL TWO.png */,
 				1A4497311C0780FD00D0E2D5 /* nav.png */,
 				1A0136761C2461010029FE1E /* info.png */,
 				1AD7E1C01C0CF29B00FEC07D /* BACKGROUND.png */,
@@ -413,6 +416,7 @@
 				1ADBE6821C24D736001C0216 /* STATUS FOUR.png in Resources */,
 				1A4497281C0775AE00D0E2D5 /* 40x40.png in Resources */,
 				1ADBE6781C24C5E2001C0216 /* BOX.png in Resources */,
+				1A46B90A1C25EBA800ACB3F1 /* LABEL TWO.png in Resources */,
 				1A381D861C0E48CE009C33E5 /* PAGE NINE.png in Resources */,
 				1ADBE67C1C24D718001C0216 /* STATUS ONE.png in Resources */,
 				1A77065C1C0722E8002DCD24 /* Main.storyboard in Resources */,

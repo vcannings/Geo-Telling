@@ -3,6 +3,8 @@ import MapKit
 import CoreLocation
 
 class StoryViewController: UIViewController {
+	@IBOutlet weak var completeButton: UIButton!
+	
 	
 	var name: String!
 	
@@ -25,7 +27,9 @@ class StoryViewController: UIViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        
+		
+		self.completeButton.hidden = true
+		
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
         rightSwipe.direction = .Right
         view.addGestureRecognizer(rightSwipe)
@@ -37,10 +41,21 @@ class StoryViewController: UIViewController {
 		print(name)
 		
 		imageView.image = storyImage.first
+		
 	}
     
     func updateImage() {
         imageView.image = storyImage[imageIndex]
+		
+		if imageView.image == storyImage.last  {
+			
+			self.completeButton.hidden = false
+			
+		}
+		
+		else {
+		self.completeButton.hidden = true
+		}
     }
     
     func rightSwipe() {
@@ -60,6 +75,7 @@ class StoryViewController: UIViewController {
         
     }
 
-    
+	
+	
 }
 
