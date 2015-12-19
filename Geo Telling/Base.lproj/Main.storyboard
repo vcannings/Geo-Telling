@@ -218,13 +218,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FILLER BOOK.png" translatesAutoresizingMaskIntoConstraints="NO" id="TZO-nw-gbI">
                                 <rect key="frame" x="284" y="405" width="32" height="120"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bournemouth Pier" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jju-vD-6Oo">
-                                <rect key="frame" x="55" y="233" width="143" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LABEL.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gfc-J8-qnO">
+                                <rect key="frame" x="61" y="236" width="131" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="66m-bp-GFs"/>
+                                    <constraint firstAttribute="width" constant="131" id="j4U-tz-a6g"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -236,6 +236,7 @@
                             </constraint>
                             <constraint firstItem="PC8-60-Ami" firstAttribute="bottom" secondItem="TZO-nw-gbI" secondAttribute="bottom" id="4uY-1H-Bws"/>
                             <constraint firstItem="0Q2-mk-AG3" firstAttribute="top" secondItem="TZO-nw-gbI" secondAttribute="bottom" id="8T0-FU-Ssl"/>
+                            <constraint firstItem="Gfc-J8-qnO" firstAttribute="top" secondItem="Ct7-Qe-nCc" secondAttribute="bottom" constant="3" id="AH1-MQ-yu1"/>
                             <constraint firstItem="5xy-fi-a1O" firstAttribute="trailing" secondItem="Vqu-eo-ztq" secondAttribute="trailing" constant="18" id="Ab8-6S-T1r">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
@@ -248,15 +249,12 @@
                             <constraint firstItem="TZO-nw-gbI" firstAttribute="leading" secondItem="PrC-YC-MOz" secondAttribute="leading" constant="8" id="BzZ-jd-sRX">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="jju-vD-6Oo" firstAttribute="centerX" secondItem="Ct7-Qe-nCc" secondAttribute="centerX" id="Ex7-bc-tar"/>
                             <constraint firstItem="bBv-qu-A06" firstAttribute="bottom" secondItem="i99-gw-q3O" secondAttribute="bottom" id="F6S-AD-Rdv"/>
                             <constraint firstItem="jfm-Wl-okM" firstAttribute="top" secondItem="TZO-nw-gbI" secondAttribute="top" id="Fev-1B-cgd"/>
-                            <constraint firstItem="jju-vD-6Oo" firstAttribute="leading" secondItem="tlR-2q-9ig" secondAttribute="leadingMargin" constant="35" id="Ff9-Zt-cM6">
-                                <variation key="widthClass=compact" constant="-15"/>
-                            </constraint>
                             <constraint firstItem="PrC-YC-MOz" firstAttribute="leading" secondItem="i99-gw-q3O" secondAttribute="leading" id="H5t-Up-uMf">
                                 <variation key="widthClass=compact" constant="9"/>
                             </constraint>
+                            <constraint firstItem="Gfc-J8-qnO" firstAttribute="centerX" secondItem="bBv-qu-A06" secondAttribute="centerX" id="I1g-b6-7Yu"/>
                             <constraint firstItem="ypm-Ob-dox" firstAttribute="top" secondItem="3yJ-Bd-wap" secondAttribute="bottom" constant="88" id="KLi-D5-bHl"/>
                             <constraint firstItem="jfm-Wl-okM" firstAttribute="bottom" secondItem="TZO-nw-gbI" secondAttribute="bottom" id="MUh-OU-I30"/>
                             <constraint firstItem="3yJ-Bd-wap" firstAttribute="leading" secondItem="tlR-2q-9ig" secondAttribute="leadingMargin" constant="-20" id="NxH-13-Fqv"/>
@@ -264,13 +262,7 @@
                             <constraint firstItem="bBv-qu-A06" firstAttribute="top" secondItem="Vqu-eo-ztq" secondAttribute="top" id="QIR-II-r7U"/>
                             <constraint firstItem="bBv-qu-A06" firstAttribute="top" secondItem="i99-gw-q3O" secondAttribute="top" id="QM1-fa-fXR"/>
                             <constraint firstItem="TZO-nw-gbI" firstAttribute="top" secondItem="PrC-YC-MOz" secondAttribute="bottom" constant="26" id="SnS-Qk-X9J"/>
-                            <constraint firstItem="jju-vD-6Oo" firstAttribute="top" secondItem="3yJ-Bd-wap" secondAttribute="top" id="Tuo-A6-XOd">
-                                <variation key="widthClass=compact" constant="2"/>
-                            </constraint>
                             <constraint firstItem="D4G-zj-Wdt" firstAttribute="top" secondItem="IDb-Bp-amc" secondAttribute="bottom" id="U8t-qF-Jhg"/>
-                            <constraint firstItem="6NX-7F-z4m" firstAttribute="top" secondItem="jju-vD-6Oo" secondAttribute="bottom" constant="65" id="UkD-7z-hdn">
-                                <variation key="widthClass=compact" constant="63"/>
-                            </constraint>
                             <constraint firstItem="6NX-7F-z4m" firstAttribute="top" secondItem="PrC-YC-MOz" secondAttribute="top" constant="60" id="UkL-wn-2tl"/>
                             <constraint firstItem="PC8-60-Ami" firstAttribute="leading" secondItem="5xy-fi-a1O" secondAttribute="leading" constant="48" id="Wci-Nu-nxd">
                                 <variation key="widthClass=compact" constant="66"/>
@@ -321,7 +313,7 @@
                     <connections>
                         <outlet property="bookButton" destination="Ct7-Qe-nCc" id="Yjn-bO-F9t"/>
                         <outlet property="bookImage" destination="bBv-qu-A06" id="g18-cV-BIM"/>
-                        <outlet property="shelfLabel" destination="jju-vD-6Oo" id="iWZ-CD-bu9"/>
+                        <outlet property="shelfLabel" destination="Gfc-J8-qnO" id="1Oe-ja-ea7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoL-Wt-AI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -471,9 +463,9 @@
                             <mask key="constraints">
                                 <exclude reference="e84-vp-D1B"/>
                                 <exclude reference="iIk-V3-HKi"/>
+                                <exclude reference="aD2-59-7ei"/>
                                 <exclude reference="7kK-aT-jzA"/>
                                 <exclude reference="ld4-La-FAv"/>
-                                <exclude reference="aD2-59-7ei"/>
                                 <exclude reference="Dh5-Nn-hi5"/>
                                 <exclude reference="wiz-TE-GZ2"/>
                                 <exclude reference="zcX-JC-SeL"/>
@@ -488,13 +480,13 @@
                                 <include reference="iIk-V3-HKi"/>
                                 <exclude reference="lTl-v1-jtT"/>
                                 <exclude reference="vvV-Ui-kni"/>
+                                <exclude reference="5bm-aQ-f9w"/>
+                                <include reference="aD2-59-7ei"/>
+                                <exclude reference="mtq-RG-b9V"/>
                                 <include reference="7kK-aT-jzA"/>
                                 <exclude reference="8w0-v3-rwi"/>
                                 <exclude reference="Cvz-y0-ZPt"/>
                                 <include reference="ld4-La-FAv"/>
-                                <exclude reference="5bm-aQ-f9w"/>
-                                <include reference="aD2-59-7ei"/>
-                                <exclude reference="mtq-RG-b9V"/>
                                 <include reference="Dh5-Nn-hi5"/>
                                 <exclude reference="K0u-MM-Dj2"/>
                                 <exclude reference="TX5-bb-eju"/>
@@ -576,6 +568,7 @@
         <image name="FILLER BOOK.png" width="30" height="200"/>
         <image name="FILLER BOOKS TWO.png" width="200" height="160"/>
         <image name="FILLER BOOKS.png" width="82" height="210"/>
+        <image name="LABEL.png" width="200" height="30"/>
         <image name="SHELF.png" width="640" height="89"/>
         <image name="STATUS FOUR.png" width="320" height="454"/>
         <image name="STATUS ONE.png" width="320" height="454"/>

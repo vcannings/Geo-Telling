@@ -7,7 +7,8 @@ class ViewController: UIViewController {
 
 @IBOutlet weak var bookButton: UIButton!
 @IBOutlet weak var bookImage: UIImageView!
-@IBOutlet weak var shelfLabel: UILabel!
+	@IBOutlet weak var shelfLabel: UIImageView!
+
 	
 	let locationManager = CLLocationManager()
 	
