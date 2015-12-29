@@ -346,170 +346,89 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STATUS ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-0y-N6p">
-                                <rect key="frame" x="0.0" y="64" width="160" height="227"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="T7n-a3-jeG"/>
-                                    <constraint firstAttribute="width" secondItem="kaP-0y-N6p" secondAttribute="height" multiplier="160:227" id="ag8-bl-RCS"/>
-                                    <constraint firstAttribute="height" constant="227" id="eSL-Gv-ncg"/>
-                                    <constraint firstAttribute="height" constant="227" id="h7c-Lv-NCO"/>
-                                    <constraint firstAttribute="width" constant="160" id="yyT-iy-tE6"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="T7n-a3-jeG"/>
-                                        <exclude reference="ag8-bl-RCS"/>
-                                        <exclude reference="eSL-Gv-ncg"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="T7n-a3-jeG"/>
-                                        <include reference="ag8-bl-RCS"/>
-                                        <include reference="eSL-Gv-ncg"/>
-                                        <exclude reference="h7c-Lv-NCO"/>
-                                        <exclude reference="yyT-iy-tE6"/>
-                                    </mask>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND.png" translatesAutoresizingMaskIntoConstraints="NO" id="UTb-9M-L57">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STATUS TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="K5C-fM-cio">
-                                <rect key="frame" x="440" y="64" width="160" height="227"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK ONE.png" translatesAutoresizingMaskIntoConstraints="NO" id="tzU-Gb-r9i">
+                                <rect key="frame" x="20" y="72" width="48" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="H1U-yG-cqY"/>
-                                    <constraint firstAttribute="width" secondItem="K5C-fM-cio" secondAttribute="height" multiplier="160:227" id="Ic5-pL-mGC"/>
-                                    <constraint firstAttribute="width" constant="160" id="LmE-SO-PBC"/>
-                                    <constraint firstAttribute="height" constant="227" id="zck-IO-oDe"/>
+                                    <constraint firstAttribute="width" constant="48" id="Av4-xk-dsM"/>
+                                    <constraint firstAttribute="height" constant="128" id="en0-ZO-v4i"/>
+                                    <constraint firstAttribute="width" secondItem="tzU-Gb-r9i" secondAttribute="height" multiplier="3:8" id="y2i-Tl-Qb1"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Ic5-pL-mGC"/>
-                                        <exclude reference="LmE-SO-PBC"/>
-                                        <exclude reference="zck-IO-oDe"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="H1U-yG-cqY"/>
-                                        <include reference="Ic5-pL-mGC"/>
-                                        <include reference="LmE-SO-PBC"/>
-                                        <include reference="zck-IO-oDe"/>
-                                    </mask>
-                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STATUS THREE.png" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-pc-viW">
-                                <rect key="frame" x="440" y="324" width="160" height="227"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK TWO.png" translatesAutoresizingMaskIntoConstraints="NO" id="OAW-7w-5yL">
+                                <rect key="frame" x="20" y="244" width="48" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="227" id="Vve-fI-2kD"/>
-                                    <constraint firstAttribute="width" constant="160" id="ew3-OU-avO"/>
-                                    <constraint firstAttribute="width" secondItem="zcF-pc-viW" secondAttribute="height" multiplier="160:227" id="xuq-tM-Sz3"/>
+                                    <constraint firstAttribute="height" constant="128" id="Wng-rC-OFI"/>
+                                    <constraint firstAttribute="width" constant="48" id="XNb-hu-Iz6"/>
+                                    <constraint firstAttribute="width" secondItem="OAW-7w-5yL" secondAttribute="height" multiplier="3:8" id="xxO-QB-X6z"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Vve-fI-2kD"/>
-                                        <exclude reference="ew3-OU-avO"/>
-                                        <exclude reference="xuq-tM-Sz3"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Vve-fI-2kD"/>
-                                        <include reference="ew3-OU-avO"/>
-                                        <include reference="xuq-tM-Sz3"/>
-                                    </mask>
-                                </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="STATUS FOUR.png" translatesAutoresizingMaskIntoConstraints="NO" id="BJ9-1K-NML">
-                                <rect key="frame" x="0.0" y="324" width="160" height="227"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BOOK FOUR.png" translatesAutoresizingMaskIntoConstraints="NO" id="dTl-XA-kR5">
+                                <rect key="frame" x="20" y="415" width="48" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="227" id="8ym-sR-J4y"/>
-                                    <constraint firstAttribute="width" constant="160" id="ScT-gk-LWL"/>
-                                    <constraint firstAttribute="width" secondItem="BJ9-1K-NML" secondAttribute="height" multiplier="160:227" id="xgj-Lp-gqj"/>
+                                    <constraint firstAttribute="width" secondItem="dTl-XA-kR5" secondAttribute="height" multiplier="3:8" id="ZlE-L3-TOT"/>
+                                    <constraint firstAttribute="height" constant="128" id="mpH-z6-jYj"/>
+                                    <constraint firstAttribute="width" constant="48" id="pmG-TO-Ie5"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="8ym-sR-J4y"/>
-                                        <exclude reference="ScT-gk-LWL"/>
-                                        <exclude reference="xgj-Lp-gqj"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="8ym-sR-J4y"/>
-                                        <include reference="ScT-gk-LWL"/>
-                                        <include reference="xgj-Lp-gqj"/>
-                                    </mask>
-                                </variation>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This story has not been found yet. Try going for a walk along the coast to find a new story." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i0f-Ln-j1b">
+                                <rect key="frame" x="340" y="72" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="SiB-AN-DKY"/>
+                                    <constraint firstAttribute="width" constant="240" id="YA2-uA-NSk"/>
+                                    <constraint firstAttribute="width" secondItem="i0f-Ln-j1b" secondAttribute="height" multiplier="15:8" id="iAi-r6-alu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This story has been discovered and is available to read on your Bookshelf." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OtK-XJ-R6y">
+                                <rect key="frame" x="340" y="244" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OtK-XJ-R6y" secondAttribute="height" multiplier="15:8" id="EvN-Qi-VXp"/>
+                                    <constraint firstAttribute="width" constant="240" id="aSQ-Kj-FJT"/>
+                                    <constraint firstAttribute="height" constant="128" id="nvm-67-6XN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="244" width="240" height="128"/>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This story has been discovered but is no longer available. Try visiting the location beneath the story." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gSN-qY-fRG">
+                                <rect key="frame" x="340" y="415" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="19E-pd-SFN"/>
+                                    <constraint firstAttribute="width" constant="240" id="kwH-eE-azc"/>
+                                    <constraint firstAttribute="width" secondItem="gSN-qY-fRG" secondAttribute="height" multiplier="15:8" id="oou-kW-8G3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="BJ9-1K-NML" firstAttribute="top" secondItem="kaP-0y-N6p" secondAttribute="bottom" constant="33" id="5bm-aQ-f9w">
-                                <variation key="widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="leading" secondItem="dnb-6h-Oiv" secondAttribute="leading" id="6Ll-JU-Bry"/>
-                            <constraint firstItem="K5C-fM-cio" firstAttribute="top" secondItem="YYq-kL-cU7" secondAttribute="bottom" id="7kK-aT-jzA"/>
-                            <constraint firstItem="K5C-fM-cio" firstAttribute="bottom" secondItem="kaP-0y-N6p" secondAttribute="bottom" id="8w0-v3-rwi"/>
-                            <constraint firstItem="K5C-fM-cio" firstAttribute="trailing" secondItem="zcF-pc-viW" secondAttribute="trailing" id="Cvz-y0-ZPt"/>
-                            <constraint firstItem="zcF-pc-viW" firstAttribute="top" secondItem="BJ9-1K-NML" secondAttribute="top" id="Dh5-Nn-hi5"/>
-                            <constraint firstAttribute="trailing" secondItem="zcF-pc-viW" secondAttribute="trailing" id="K0u-MM-Dj2"/>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="top" secondItem="YYq-kL-cU7" secondAttribute="bottom" id="Rkd-vf-Uc8"/>
-                            <constraint firstItem="zcF-pc-viW" firstAttribute="leading" secondItem="K5C-fM-cio" secondAttribute="leading" id="TX5-bb-eju"/>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="top" secondItem="K5C-fM-cio" secondAttribute="top" id="Yfg-m1-xqv"/>
-                            <constraint firstItem="BJ9-1K-NML" firstAttribute="leading" secondItem="kaP-0y-N6p" secondAttribute="leading" id="aD2-59-7ei"/>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="leading" secondItem="dnb-6h-Oiv" secondAttribute="leading" id="e84-vp-D1B"/>
-                            <constraint firstItem="zcF-pc-viW" firstAttribute="bottom" secondItem="s6I-fG-KZV" secondAttribute="top" id="ew7-no-eAf">
-                                <variation key="widthClass=compact" constant="-33"/>
-                            </constraint>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="top" secondItem="K5C-fM-cio" secondAttribute="top" id="iIk-V3-HKi"/>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="trailing" secondItem="BJ9-1K-NML" secondAttribute="trailing" id="lTl-v1-jtT"/>
-                            <constraint firstItem="K5C-fM-cio" firstAttribute="leading" secondItem="zcF-pc-viW" secondAttribute="leading" id="ld4-La-FAv"/>
-                            <constraint firstItem="BJ9-1K-NML" firstAttribute="bottom" secondItem="s6I-fG-KZV" secondAttribute="top" id="mtq-RG-b9V">
-                                <variation key="widthClass=compact" constant="-33"/>
-                            </constraint>
-                            <constraint firstItem="kaP-0y-N6p" firstAttribute="leading" secondItem="BJ9-1K-NML" secondAttribute="leading" id="vvV-Ui-kni"/>
-                            <constraint firstItem="zcF-pc-viW" firstAttribute="bottom" secondItem="s6I-fG-KZV" secondAttribute="top" id="wiz-TE-GZ2">
-                                <variation key="widthClass=compact" constant="-1"/>
-                            </constraint>
-                            <constraint firstItem="zcF-pc-viW" firstAttribute="top" secondItem="BJ9-1K-NML" secondAttribute="top" id="x4S-vc-IBZ"/>
-                            <constraint firstAttribute="trailing" secondItem="zcF-pc-viW" secondAttribute="trailing" id="zcX-JC-SeL"/>
+                            <constraint firstItem="s6I-fG-KZV" firstAttribute="top" secondItem="gSN-qY-fRG" secondAttribute="bottom" constant="8" id="1cQ-0e-opr"/>
+                            <constraint firstItem="s6I-fG-KZV" firstAttribute="top" secondItem="dTl-XA-kR5" secondAttribute="bottom" constant="8" id="9zH-a3-ipH"/>
+                            <constraint firstItem="OtK-XJ-R6y" firstAttribute="trailing" secondItem="dnb-6h-Oiv" secondAttribute="trailingMargin" id="Cvf-G5-PYr"/>
+                            <constraint firstItem="tzU-Gb-r9i" firstAttribute="leading" secondItem="dnb-6h-Oiv" secondAttribute="leadingMargin" id="Ff1-0m-co8"/>
+                            <constraint firstItem="OtK-XJ-R6y" firstAttribute="centerY" secondItem="UTb-9M-L57" secondAttribute="centerY" id="Gyh-kT-Gf2"/>
+                            <constraint firstItem="OtK-XJ-R6y" firstAttribute="top" secondItem="OAW-7w-5yL" secondAttribute="top" id="OO9-k1-kgx"/>
+                            <constraint firstItem="i0f-Ln-j1b" firstAttribute="trailing" secondItem="dnb-6h-Oiv" secondAttribute="trailingMargin" id="Qov-8x-lQ0"/>
+                            <constraint firstItem="dTl-XA-kR5" firstAttribute="leading" secondItem="dnb-6h-Oiv" secondAttribute="leadingMargin" id="SHa-GT-AHj"/>
+                            <constraint firstItem="OAW-7w-5yL" firstAttribute="leading" secondItem="dnb-6h-Oiv" secondAttribute="leadingMargin" id="TGD-DT-MRL"/>
+                            <constraint firstItem="UTb-9M-L57" firstAttribute="leading" secondItem="dnb-6h-Oiv" secondAttribute="leadingMargin" constant="-20" id="V6k-1q-Gev"/>
+                            <constraint firstItem="UTb-9M-L57" firstAttribute="top" secondItem="YYq-kL-cU7" secondAttribute="bottom" id="Zmu-lE-GYc"/>
+                            <constraint firstItem="i0f-Ln-j1b" firstAttribute="top" secondItem="YYq-kL-cU7" secondAttribute="bottom" constant="8" id="bi7-rp-h3x"/>
+                            <constraint firstItem="tzU-Gb-r9i" firstAttribute="top" secondItem="YYq-kL-cU7" secondAttribute="bottom" constant="8" id="cOT-ZN-Ru1"/>
+                            <constraint firstItem="gSN-qY-fRG" firstAttribute="trailing" secondItem="dnb-6h-Oiv" secondAttribute="trailingMargin" id="hCv-Xl-0U0"/>
+                            <constraint firstItem="s6I-fG-KZV" firstAttribute="top" secondItem="UTb-9M-L57" secondAttribute="bottom" id="m7B-kQ-3kB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UTb-9M-L57" secondAttribute="trailing" constant="-20" id="v6b-yM-42y"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="e84-vp-D1B"/>
-                                <exclude reference="iIk-V3-HKi"/>
-                                <exclude reference="aD2-59-7ei"/>
-                                <exclude reference="7kK-aT-jzA"/>
-                                <exclude reference="ld4-La-FAv"/>
-                                <exclude reference="Dh5-Nn-hi5"/>
-                                <exclude reference="wiz-TE-GZ2"/>
-                                <exclude reference="zcX-JC-SeL"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="constraints">
-                                <exclude reference="6Ll-JU-Bry"/>
-                                <exclude reference="Rkd-vf-Uc8"/>
-                                <exclude reference="Yfg-m1-xqv"/>
-                                <include reference="e84-vp-D1B"/>
-                                <include reference="iIk-V3-HKi"/>
-                                <exclude reference="lTl-v1-jtT"/>
-                                <exclude reference="vvV-Ui-kni"/>
-                                <exclude reference="5bm-aQ-f9w"/>
-                                <include reference="aD2-59-7ei"/>
-                                <exclude reference="mtq-RG-b9V"/>
-                                <include reference="7kK-aT-jzA"/>
-                                <exclude reference="8w0-v3-rwi"/>
-                                <exclude reference="Cvz-y0-ZPt"/>
-                                <include reference="ld4-La-FAv"/>
-                                <include reference="Dh5-Nn-hi5"/>
-                                <exclude reference="K0u-MM-Dj2"/>
-                                <exclude reference="TX5-bb-eju"/>
-                                <exclude reference="ew7-no-eAf"/>
-                                <include reference="wiz-TE-GZ2"/>
-                                <exclude reference="x4S-vc-IBZ"/>
-                                <include reference="zcX-JC-SeL"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Book Key" id="Yfj-yi-9aC"/>
                 </viewController>
@@ -576,6 +495,7 @@
     </scenes>
     <resources>
         <image name="BACKGROUND.png" width="640" height="909"/>
+        <image name="BOOK FOUR.png" width="80" height="200"/>
         <image name="BOOK ONE.png" width="80" height="200"/>
         <image name="BOOK TWO.png" width="80" height="200"/>
         <image name="FILLER BOOK TWO.png" width="179" height="80"/>
@@ -584,10 +504,6 @@
         <image name="FILLER BOOKS.png" width="82" height="210"/>
         <image name="LABEL.png" width="200" height="30"/>
         <image name="SHELF.png" width="640" height="89"/>
-        <image name="STATUS FOUR.png" width="320" height="454"/>
-        <image name="STATUS ONE.png" width="320" height="454"/>
-        <image name="STATUS THREE.png" width="320" height="454"/>
-        <image name="STATUS TWO.png" width="320" height="454"/>
         <image name="book.png" width="30" height="30"/>
         <image name="info.png" width="30" height="30"/>
         <image name="nav.png" width="30" height="30"/>
