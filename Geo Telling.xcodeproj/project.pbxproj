@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A0136771C2461010029FE1E /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0136761C2461010029FE1E /* info.png */; };
+		1A1B46F31C331C900030E7BA /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1B46F21C331C900030E7BA /* AboutViewController.swift */; };
 		1A381D781C0E2D07009C33E5 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A381D771C0E2D07009C33E5 /* StoryViewController.swift */; };
 		1A381D7A1C0E346C009C33E5 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A381D791C0E346C009C33E5 /* LocationViewController.swift */; };
 		1A381D851C0E48CE009C33E5 /* PAGE TEN.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A381D7B1C0E48CE009C33E5 /* PAGE TEN.png */; };
@@ -83,6 +84,7 @@
 
 /* Begin PBXFileReference section */
 		1A0136761C2461010029FE1E /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		1A1B46F21C331C900030E7BA /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1A381D771C0E2D07009C33E5 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		1A381D791C0E346C009C33E5 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		1A381D7B1C0E48CE009C33E5 /* PAGE TEN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PAGE TEN.png"; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				1A381D771C0E2D07009C33E5 /* StoryViewController.swift */,
 				1A4497371C07946F00D0E2D5 /* NavigationViewController.swift */,
 				1A381D791C0E346C009C33E5 /* LocationViewController.swift */,
+				1A1B46F21C331C900030E7BA /* AboutViewController.swift */,
 				1A77065A1C0722E8002DCD24 /* Main.storyboard */,
 				1A77065D1C0722E8002DCD24 /* Assets.xcassets */,
 				1A46B9071C25E7C800ACB3F1 /* LABEL.png */,
@@ -446,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1B46F31C331C900030E7BA /* AboutViewController.swift in Sources */,
 				1A381D7A1C0E346C009C33E5 /* LocationViewController.swift in Sources */,
 				1A381D781C0E2D07009C33E5 /* StoryViewController.swift in Sources */,
 				1A4497381C07946F00D0E2D5 /* NavigationViewController.swift in Sources */,

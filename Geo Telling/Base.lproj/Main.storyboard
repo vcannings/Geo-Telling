@@ -52,7 +52,7 @@
         <!--About-->
         <scene sceneID="nLp-qP-wAd">
             <objects>
-                <viewController id="ys9-xb-b1j" sceneMemberID="viewController">
+                <viewController id="ys9-xb-b1j" customClass="AboutViewController" customModule="Geo_Telling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UfX-iM-s3o"/>
                         <viewControllerLayoutGuide type="bottom" id="p2s-d4-54g"/>
@@ -64,13 +64,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND.png" translatesAutoresizingMaskIntoConstraints="NO" id="xcE-ai-Kbt">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="q4u-ep-Y6i">
+                                <rect key="frame" x="30" y="114" width="539" height="177"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <string key="text">Geo Telling is a location based story telling application that uses caches of data to tell stories. These caches can be discovered in certain areas along the coast line. To start your journey, the first installment of Geo Telling can be found at Bournemouth Pier. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="p2s-d4-54g" firstAttribute="top" secondItem="q4u-ep-Y6i" secondAttribute="bottom" constant="260" id="4KU-b4-K58"/>
+                            <constraint firstItem="q4u-ep-Y6i" firstAttribute="leading" secondItem="GAJ-vL-w4d" secondAttribute="leadingMargin" constant="10" id="Biw-X0-H9O"/>
                             <constraint firstItem="xcE-ai-Kbt" firstAttribute="top" secondItem="UfX-iM-s3o" secondAttribute="bottom" id="FTO-pn-icw"/>
                             <constraint firstItem="xcE-ai-Kbt" firstAttribute="leading" secondItem="GAJ-vL-w4d" secondAttribute="leadingMargin" constant="-20" id="LO6-WX-huH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xcE-ai-Kbt" secondAttribute="trailing" constant="-20" id="dbC-xV-wUH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q4u-ep-Y6i" secondAttribute="trailing" constant="11" id="pnB-Im-8gg"/>
                             <constraint firstItem="p2s-d4-54g" firstAttribute="top" secondItem="xcE-ai-Kbt" secondAttribute="bottom" id="poh-ww-s8P"/>
+                            <constraint firstItem="q4u-ep-Y6i" firstAttribute="top" secondItem="UfX-iM-s3o" secondAttribute="bottom" constant="50" id="zpb-Zk-MP9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="kCk-OV-39i"/>
