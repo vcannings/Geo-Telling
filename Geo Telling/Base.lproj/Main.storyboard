@@ -108,23 +108,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-GI-C5L">
                                 <rect key="frame" x="0.0" y="64" width="600" height="430"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A18-Jn-Q2P">
-                                <rect key="frame" x="202" y="507" width="197" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="197" id="cCi-qz-MF4"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="LABEL TWO.png"/>
-                                <connections>
-                                    <action selector="completeButton:" destination="eLA-kk-epl" eventType="touchUpInside" id="uCM-o1-lXW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aXM-GI-C5L" firstAttribute="top" secondItem="mYc-lU-HzC" secondAttribute="bottom" id="0fz-vx-PUS"/>
                             <constraint firstItem="aXM-GI-C5L" firstAttribute="leading" secondItem="6YJ-1z-05P" secondAttribute="leadingMargin" constant="-20" id="BxV-45-VJB"/>
-                            <constraint firstItem="A18-Jn-Q2P" firstAttribute="top" secondItem="aXM-GI-C5L" secondAttribute="bottom" constant="13" id="Fo6-aQ-9rl"/>
-                            <constraint firstItem="A18-Jn-Q2P" firstAttribute="centerX" secondItem="aXM-GI-C5L" secondAttribute="centerX" id="eu2-8b-kIC"/>
                             <constraint firstItem="D3k-6A-CCA" firstAttribute="top" secondItem="aXM-GI-C5L" secondAttribute="bottom" constant="57" id="jlJ-P3-2wC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aXM-GI-C5L" secondAttribute="trailing" constant="-20" id="qU9-ny-C94"/>
                         </constraints>
@@ -133,7 +121,6 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="xbU-32-htg"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="completeButton" destination="A18-Jn-Q2P" id="Tne-jX-zES"/>
                         <outlet property="imageView" destination="aXM-GI-C5L" id="CiC-Lc-Sor"/>
                     </connections>
                 </viewController>
@@ -595,7 +582,6 @@
         <image name="FILLER BOOK.png" width="30" height="200"/>
         <image name="FILLER BOOKS TWO.png" width="200" height="160"/>
         <image name="FILLER BOOKS.png" width="82" height="210"/>
-        <image name="LABEL TWO.png" width="200" height="30"/>
         <image name="LABEL.png" width="200" height="30"/>
         <image name="SHELF.png" width="640" height="89"/>
         <image name="STATUS FOUR.png" width="320" height="454"/>

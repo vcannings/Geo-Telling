@@ -6,12 +6,6 @@ import WebKit
 class StoryViewController: UIViewController {
 	
 	
-	@IBOutlet weak var completeButton: UIButton!
-	
-	@IBAction func completeButton(sender: AnyObject) {
-		//navigationController?.popViewControllerAnimated(true)
-	}
-	
 	var status: String!
 	
 	var storyImage:[UIImage] = [
@@ -34,7 +28,7 @@ class StoryViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		self.completeButton.hidden = true
+	
 		
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
         rightSwipe.direction = .Right
@@ -52,16 +46,6 @@ class StoryViewController: UIViewController {
     
     func updateImage() {
         imageView.image = storyImage[imageIndex]
-		
-		if imageView.image == storyImage.last  {
-			
-			self.completeButton.hidden = false
-			
-		}
-		
-		else {
-		self.completeButton.hidden = true
-		}
     }
     
     func rightSwipe() {
