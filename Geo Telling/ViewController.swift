@@ -8,7 +8,7 @@ class ViewController: UIViewController {
 
 @IBOutlet weak var bookButton: UIButton!
 @IBOutlet weak var bookImage: UIImageView!
-	@IBOutlet weak var shelfLabel: UIImageView!
+@IBOutlet weak var shelfLabel: UIImageView!
 
 	
 	let locationManager = CLLocationManager()
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
+		//self.completeBook.hidden = true
 		self.bookButton.hidden = true
 		self.shelfLabel.hidden = true
 		
@@ -34,7 +35,7 @@ class ViewController: UIViewController {
 		
 		if segue.identifier == "geocacheTransition" {
 			let vc = segue.destinationViewController as! StoryViewController
-			vc.name = "Verity"
+			vc.status = "Not Complete"
 		}
 		
 	}

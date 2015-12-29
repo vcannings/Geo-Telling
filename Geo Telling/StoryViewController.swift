@@ -4,10 +4,15 @@ import CoreLocation
 import WebKit
 
 class StoryViewController: UIViewController {
+	
+	
 	@IBOutlet weak var completeButton: UIButton!
 	
+	@IBAction func completeButton(sender: AnyObject) {
+		navigationController?.popViewControllerAnimated(true)
+	}
 	
-	var name: String!
+	var status: String!
 	
 	var storyImage:[UIImage] = [
 		UIImage(named: "PAGE ONE.png")!,
@@ -39,7 +44,7 @@ class StoryViewController: UIViewController {
         leftSwipe.direction = .Left
         view.addGestureRecognizer(leftSwipe)
         
-		print(name)
+		print(status)
 		
 		imageView.image = storyImage.first
 		
