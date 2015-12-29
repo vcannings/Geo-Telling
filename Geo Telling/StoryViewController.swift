@@ -9,7 +9,7 @@ class StoryViewController: UIViewController {
 	@IBOutlet weak var completeButton: UIButton!
 	
 	@IBAction func completeButton(sender: AnyObject) {
-		navigationController?.popViewControllerAnimated(true)
+		//navigationController?.popViewControllerAnimated(true)
 	}
 	
 	var status: String!
