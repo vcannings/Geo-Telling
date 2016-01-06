@@ -2,6 +2,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import WebKit
+import AudioToolbox
 
 class ViewController: UIViewController {
 	
@@ -13,8 +14,12 @@ class ViewController: UIViewController {
 	
 	let locationManager = CLLocationManager()
 	
+	
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		 UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
 		
 		//self.completeBook.hidden = true
 		self.bookButton.hidden = true
@@ -39,7 +44,19 @@ class ViewController: UIViewController {
 		}
 		
 	}
+	override func shouldAutorotate() -> Bool {
+		// Lock autorotate
+		return false
+	}
+	
+	
 
+	
+	override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
+		
+		// Only allow Portrait
+		return UIInterfaceOrientation.Portrait
+	}
 	
 }
 
@@ -61,6 +78,7 @@ extension ViewController: CLLocationManagerDelegate {
 		bookImage.image = UIImage(named: "BOOK FOUR.png")
 		//navigationController?.popToRootViewControllerAnimated(true)
 		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the appropriate region of the story and can no longer view it. Return to it's location to continue reading (displayed beneath the book on the shelf).", preferredStyle: UIAlertControllerStyle.Alert)
+		AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
 		
 		
 		refreshAlert.addAction(UIAlertAction(title: "Dismiss", style: .Default, handler: { (action: UIAlertAction!) in
@@ -80,7 +98,7 @@ extension ViewController: CLLocationManagerDelegate {
 		self.bookButton.hidden = false
 		self.shelfLabel.hidden = false
 		let refreshAlert = UIAlertController(title: "New Story Found!", message: "You have discovered a new story! You can view it by clicking it on your Bookshelf.", preferredStyle: UIAlertControllerStyle.Alert)
-		
+		AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
 		
 		refreshAlert.addAction(UIAlertAction(title: "Dismiss", style: .Default, handler: { (action: UIAlertAction!) in
 			
