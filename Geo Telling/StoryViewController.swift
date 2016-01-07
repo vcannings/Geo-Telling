@@ -12,6 +12,9 @@ class StoryViewController: UIViewController {
 	
     var delegate: StoryViewControllerDelegate?
     
+    @IBOutlet weak var incompleteButton: UIButton!
+    @IBAction func incompleteButton(sender: AnyObject) {
+    }
     @IBOutlet weak var completeButton: UIButton!
     @IBAction func completeButton(sender: AnyObject) {
         delegate?.tickBook(1)
@@ -41,6 +44,7 @@ class StoryViewController: UIViewController {
 		super.viewDidLoad()
 		
 	   self.completeButton.hidden = true
+        self.incompleteButton.hidden = true
 		
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
         rightSwipe.direction = .Right
@@ -60,6 +64,7 @@ class StoryViewController: UIViewController {
         imageView.image = storyImage[imageIndex]
         if imageIndex == 9 {
         self.completeButton.hidden = false
+        self.incompleteButton.hidden = false
         }
     }
     

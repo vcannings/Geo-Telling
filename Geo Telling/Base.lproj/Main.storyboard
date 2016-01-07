@@ -129,6 +129,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="completeButton:" destination="eLA-kk-epl" eventType="touchUpInside" id="SWg-N0-vmF"/>
+                                    <action selector="incompleteButton:" destination="eLA-kk-epl" eventType="touchUpInside" id="odg-mT-PFH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueb-lG-ZnM">
@@ -191,6 +192,7 @@
                     <connections>
                         <outlet property="completeButton" destination="Ueb-lG-ZnM" id="e7k-vp-j9m"/>
                         <outlet property="imageView" destination="aXM-GI-C5L" id="CiC-Lc-Sor"/>
+                        <outlet property="incompleteButton" destination="g0v-ko-7QQ" id="Z7U-Ql-xqg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRI-8U-a3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
