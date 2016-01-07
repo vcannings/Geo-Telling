@@ -6,6 +6,7 @@ import WebKit
 protocol StoryViewControllerDelegate {
     func tickBook(bookNumber: Int)
     func untickBook(bookNumber: Int)
+	//calls the dekegate protocols from the main view controller, sends information when buttons are pressed
 }
 
 
@@ -16,10 +17,12 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var incompleteButton: UIButton!
     @IBAction func incompleteButton(sender: AnyObject) {
         delegate?.untickBook(1)
+		//hides complete icon if visible
     }
     @IBOutlet weak var completeButton: UIButton!
     @IBAction func completeButton(sender: AnyObject) {
         delegate?.tickBook(1)
+		//shows complete icon if hidden
     }
    
 	
@@ -35,6 +38,7 @@ class StoryViewController: UIViewController {
 		UIImage(named: "PAGE NINE.png")!,
 		UIImage(named: "PAGE TEN.png")!,
 	]
+	//an array of images stored in an image view, navigated by changing the array index
     
 	var imageIndex = 0
 	
@@ -49,18 +53,21 @@ class StoryViewController: UIViewController {
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
         rightSwipe.direction = .Right
         view.addGestureRecognizer(rightSwipe)
-        
+		
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: "leftSwipe")
         leftSwipe.direction = .Left
         view.addGestureRecognizer(leftSwipe)
-        
+		
+		//Setting up the application to recognize swipe gestures
 		
 		imageView.image = storyImage.first
+		//Setting the default image to the first item in the array
 		
 	}
     
     func updateImage() {
         imageView.image = storyImage[imageIndex]
+		//constantly updating the image view after swiping
         if imageIndex == 9 {
         self.completeButton.hidden = false
         self.incompleteButton.hidden = false
@@ -68,6 +75,7 @@ class StoryViewController: UIViewController {
             self.completeButton.hidden = true
             self.incompleteButton.hidden = true
         }
+		//making the complete/incomplete buttons visible if the user reaches the last image
     }
     
     func rightSwipe() {
@@ -76,6 +84,7 @@ class StoryViewController: UIViewController {
             updateImage()
             print("Right swipe")
         }
+		//lets the user swipe right until they reach the first image in the array
     }
    
     func leftSwipe() {
@@ -84,7 +93,7 @@ class StoryViewController: UIViewController {
             updateImage()
             print("Left swipe")
         }
-        
+       //lets the user swipe left until they reach the last image in the array
     }
 
 	

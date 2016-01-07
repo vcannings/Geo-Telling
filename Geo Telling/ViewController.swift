@@ -21,6 +21,7 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		
 		 UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
+		//application does not rotate with the screen orientation
 		
 		self.bookButton.hidden = true
 		self.shelfLabel.hidden = true
@@ -50,9 +51,6 @@ class ViewController: UIViewController {
 		return false
 	}
 	
-	
-
-	
 	override func preferredInterfaceOrientationForPresentation() -> UIInterfaceOrientation {
 		
 		// Only allow Portrait
@@ -78,8 +76,10 @@ extension ViewController: CLLocationManagerDelegate {
 		self.bookButton.hidden = true
 		bookImage.image = UIImage(named: "BOOK FOUR.png")
 		//navigationController?.popToRootViewControllerAnimated(true)
+		//When the user exits the region, push them back to the main view
 		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the appropriate region of the story and can no longer view it. Return to it's location to continue reading (displayed beneath the book on the shelf).", preferredStyle: UIAlertControllerStyle.Alert)
 		AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+		//Vibrate when a notification pops up
 		
 		
 		refreshAlert.addAction(UIAlertAction(title: "Dismiss", style: .Default, handler: { (action: UIAlertAction!) in
@@ -125,6 +125,8 @@ extension ViewController: StoryViewControllerDelegate {
     func untickBook(bookNumber: Int) {
         completeIcon.hidden = true
     }
+	
+	//Sends the protocols to the StoryViewController so that data can be passed between views
 }
 
 
