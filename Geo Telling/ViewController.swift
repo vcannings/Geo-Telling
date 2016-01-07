@@ -10,6 +10,7 @@ class ViewController: UIViewController {
 @IBOutlet weak var bookButton: UIButton!
 @IBOutlet weak var bookImage: UIImageView!
 @IBOutlet weak var shelfLabel: UIImageView!
+@IBOutlet weak var completeIcon: UIImageView!
 
 	
 	let locationManager = CLLocationManager()
@@ -21,9 +22,9 @@ class ViewController: UIViewController {
 		
 		 UIDevice.currentDevice().setValue(UIInterfaceOrientation.Portrait.rawValue, forKey: "orientation")
 		
-		//self.completeBook.hidden = true
 		self.bookButton.hidden = true
 		self.shelfLabel.hidden = true
+        self.completeIcon.hidden = true
 		
 		locationManager.requestAlwaysAuthorization()
 		locationManager.delegate = self
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
 		if segue.identifier == "geocacheTransition" {
 			let vc = segue.destinationViewController as! StoryViewController
 			vc.status = "Not Complete"
+            vc.delegate = self
 		}
 		
 	}
@@ -114,9 +116,13 @@ extension ViewController: CLLocationManagerDelegate {
 }
 
 
-
-
-
+extension ViewController: StoryViewControllerDelegate {
+    func tickBook(bookNumber: Int) {
+        print("tick off book \(bookNumber)")
+        completeIcon.hidden = false
+        
+    }
+}
 
 
 

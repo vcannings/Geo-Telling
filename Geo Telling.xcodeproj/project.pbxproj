@@ -63,6 +63,8 @@
 		1ADBE67E1C24D724001C0216 /* STATUS TWO.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBE67D1C24D724001C0216 /* STATUS TWO.png */; };
 		1ADBE6801C24D72F001C0216 /* STATUS THREE.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBE67F1C24D72F001C0216 /* STATUS THREE.png */; };
 		1ADBE6821C24D736001C0216 /* STATUS FOUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBE6811C24D736001C0216 /* STATUS FOUR.png */; };
+		A39047741C3E6BCC0076201C /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = A39047731C3E6BCC0076201C /* crown.png */; settings = {ASSET_TAGS = (); }; };
+		A39047761C3E6CB20076201C /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = A39047751C3E6CB20076201C /* complete.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,8 @@
 		1ADBE67D1C24D724001C0216 /* STATUS TWO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "STATUS TWO.png"; sourceTree = "<group>"; };
 		1ADBE67F1C24D72F001C0216 /* STATUS THREE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "STATUS THREE.png"; sourceTree = "<group>"; };
 		1ADBE6811C24D736001C0216 /* STATUS FOUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "STATUS FOUR.png"; sourceTree = "<group>"; };
+		A39047731C3E6BCC0076201C /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		A39047751C3E6CB20076201C /* complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 				1A4497321C0780FD00D0E2D5 /* book.png */,
 				1ADBE6771C24C5E2001C0216 /* BOX.png */,
 				1ADBE6791C24CFAE001C0216 /* BOX TWO.png */,
+				A39047751C3E6CB20076201C /* complete.png */,
+				A39047731C3E6BCC0076201C /* crown.png */,
 				1AD7E1C81C0D02D200FEC07D /* SHELF.png */,
 				1ADBE67B1C24D718001C0216 /* STATUS ONE.png */,
 				1ADBE67D1C24D724001C0216 /* STATUS TWO.png */,
@@ -403,6 +409,7 @@
 				1A44971D1C0773EA00D0E2D5 /* 167x167.png in Resources */,
 				1AD7E1C71C0CF85D00FEC07D /* FILLER BOOK.png in Resources */,
 				1A381D8E1C0E48CE009C33E5 /* PAGE ONE.png in Resources */,
+				A39047761C3E6CB20076201C /* complete.png in Resources */,
 				1A7706611C0722E8002DCD24 /* LaunchScreen.storyboard in Resources */,
 				1ADBE6801C24D72F001C0216 /* STATUS THREE.png in Resources */,
 				1AC8DE591C0F88070000C089 /* FILLER BOOK TWO.png in Resources */,
@@ -417,6 +424,7 @@
 				1AD7E1C51C0CF42200FEC07D /* FILLER BOOKS.png in Resources */,
 				1A4497201C0773EA00D0E2D5 /* 1024x1024.psd in Resources */,
 				1ADBE6821C24D736001C0216 /* STATUS FOUR.png in Resources */,
+				A39047741C3E6BCC0076201C /* crown.png in Resources */,
 				1A4497281C0775AE00D0E2D5 /* 40x40.png in Resources */,
 				1ADBE6781C24C5E2001C0216 /* BOX.png in Resources */,
 				1A46B90A1C25EBA800ACB3F1 /* LABEL TWO.png in Resources */,

@@ -3,9 +3,21 @@ import MapKit
 import CoreLocation
 import WebKit
 
+protocol StoryViewControllerDelegate {
+    func tickBook(bookNumber: Int)
+}
+
+
 class StoryViewController: UIViewController {
 	
-	
+    var delegate: StoryViewControllerDelegate?
+    
+    @IBOutlet weak var completeButton: UIButton!
+    @IBAction func completeButton(sender: AnyObject) {
+        delegate?.tickBook(1)
+    }
+   
+    
 	var status: String!
 	
 	var storyImage:[UIImage] = [
@@ -28,7 +40,7 @@ class StoryViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-	
+	   self.completeButton.hidden = true
 		
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: "rightSwipe")
         rightSwipe.direction = .Right
@@ -46,6 +58,9 @@ class StoryViewController: UIViewController {
     
     func updateImage() {
         imageView.image = storyImage[imageIndex]
+        if imageIndex == 9 {
+        self.completeButton.hidden = false
+        }
     }
     
     func rightSwipe() {
