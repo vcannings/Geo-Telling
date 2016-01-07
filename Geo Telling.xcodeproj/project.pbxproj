@@ -65,6 +65,7 @@
 		1ADBE6821C24D736001C0216 /* STATUS FOUR.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBE6811C24D736001C0216 /* STATUS FOUR.png */; };
 		A39047741C3E6BCC0076201C /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = A39047731C3E6BCC0076201C /* crown.png */; settings = {ASSET_TAGS = (); }; };
 		A39047761C3E6CB20076201C /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = A39047751C3E6CB20076201C /* complete.png */; settings = {ASSET_TAGS = (); }; };
+		A3A5A0291C3E75C000E9EF2F /* LABEL THREE.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A5A0281C3E75C000E9EF2F /* LABEL THREE.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		1ADBE6811C24D736001C0216 /* STATUS FOUR.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "STATUS FOUR.png"; sourceTree = "<group>"; };
 		A39047731C3E6BCC0076201C /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
 		A39047751C3E6CB20076201C /* complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
+		A3A5A0281C3E75C000E9EF2F /* LABEL THREE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LABEL THREE.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				1A77065D1C0722E8002DCD24 /* Assets.xcassets */,
 				1A46B9071C25E7C800ACB3F1 /* LABEL.png */,
 				1A46B9091C25EBA800ACB3F1 /* LABEL TWO.png */,
+				A3A5A0281C3E75C000E9EF2F /* LABEL THREE.png */,
 				1A4497311C0780FD00D0E2D5 /* nav.png */,
 				1A0136761C2461010029FE1E /* info.png */,
 				1AD7E1C01C0CF29B00FEC07D /* BACKGROUND.png */,
@@ -387,6 +390,7 @@
 				1AD7E1BD1C0CF05B00FEC07D /* BOOK THREE.png in Resources */,
 				1A4497361C078AEF00D0E2D5 /* loading.png in Resources */,
 				1A381D8C1C0E48CE009C33E5 /* PAGE THREE.png in Resources */,
+				A3A5A0291C3E75C000E9EF2F /* LABEL THREE.png in Resources */,
 				1A381D8B1C0E48CE009C33E5 /* PAGE FOUR.png in Resources */,
 				1A4497241C07750900D0E2D5 /* 80x80.png in Resources */,
 				1A381D8D1C0E48CE009C33E5 /* PAGE TWO.png in Resources */,
