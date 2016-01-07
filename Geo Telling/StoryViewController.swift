@@ -67,6 +67,9 @@ class StoryViewController: UIViewController {
         if imageIndex == 9 {
         self.completeButton.hidden = false
         self.incompleteButton.hidden = false
+        } else {
+            self.completeButton.hidden = true
+            self.incompleteButton.hidden = true
         }
     }
     
