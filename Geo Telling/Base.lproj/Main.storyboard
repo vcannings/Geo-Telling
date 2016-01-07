@@ -61,7 +61,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Extra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGa-pp-u5g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGa-pp-u5g">
                                 <rect key="frame" x="20" y="329" width="100" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -87,8 +87,10 @@
                             <constraint firstItem="Vlk-mz-wUn" firstAttribute="trailing" secondItem="yU2-w5-BIn" secondAttribute="trailing" id="Ncc-fi-8x5"/>
                             <constraint firstItem="Vlk-mz-wUn" firstAttribute="top" secondItem="yU2-w5-BIn" secondAttribute="bottom" constant="8" symbolic="YES" id="Tr0-MV-tZ9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1jw-27-mVK" secondAttribute="trailing" constant="-20" id="W9z-dE-pm4"/>
+                            <constraint firstItem="MGa-pp-u5g" firstAttribute="leading" secondItem="peg-W6-ibK" secondAttribute="leading" id="XOf-lq-y5z"/>
                             <constraint firstItem="peg-W6-ibK" firstAttribute="leading" secondItem="Imb-wA-Oxz" secondAttribute="leading" id="YYl-Vh-aKI"/>
                             <constraint firstItem="1jw-27-mVK" firstAttribute="leading" secondItem="FPU-Ha-NxZ" secondAttribute="leadingMargin" constant="-20" id="aJ5-K3-DSd"/>
+                            <constraint firstItem="MGa-pp-u5g" firstAttribute="trailing" secondItem="peg-W6-ibK" secondAttribute="trailing" id="bWE-Vq-ZHC"/>
                             <constraint firstItem="1jw-27-mVK" firstAttribute="top" secondItem="F5I-Xv-HA8" secondAttribute="bottom" id="fU5-Y8-MhR"/>
                             <constraint firstItem="peg-W6-ibK" firstAttribute="top" secondItem="Imb-wA-Oxz" secondAttribute="bottom" constant="8" symbolic="YES" id="gTT-1a-fvi"/>
                             <constraint firstItem="yU2-w5-BIn" firstAttribute="top" secondItem="F5I-Xv-HA8" secondAttribute="bottom" constant="20" id="gec-wN-TUi"/>
@@ -183,8 +185,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXM-GI-C5L">
                                 <rect key="frame" x="0.0" y="64" width="600" height="430"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0v-ko-7QQ">
-                                <rect key="frame" x="457" y="502" width="122" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0v-ko-7QQ">
+                                <rect key="frame" x="458" y="502" width="122" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="124" id="GP0-Ry-dN3"/>
                                     <constraint firstAttribute="height" constant="30" id="c2X-rw-qtO"/>
@@ -207,8 +209,8 @@
                                     <action selector="incompleteButton:" destination="eLA-kk-epl" eventType="touchUpInside" id="odg-mT-PFH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueb-lG-ZnM">
-                                <rect key="frame" x="15" y="502" width="122" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueb-lG-ZnM">
+                                <rect key="frame" x="20" y="502" width="122" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="38r-nD-Q3U"/>
                                     <constraint firstAttribute="height" constant="30" id="AHG-Wh-b3y"/>
