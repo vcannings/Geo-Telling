@@ -41,7 +41,6 @@ class ViewController: UIViewController {
 		
 		if segue.identifier == "geocacheTransition" {
 			let vc = segue.destinationViewController as! StoryViewController
-			vc.status = "Not Complete"
             vc.delegate = self
 		}
 		

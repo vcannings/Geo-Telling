@@ -22,8 +22,6 @@ class StoryViewController: UIViewController {
         delegate?.tickBook(1)
     }
    
-    
-	var status: String!
 	
 	var storyImage:[UIImage] = [
 		UIImage(named: "PAGE ONE.png")!,
@@ -56,7 +54,6 @@ class StoryViewController: UIViewController {
         leftSwipe.direction = .Left
         view.addGestureRecognizer(leftSwipe)
         
-		print(status)
 		
 		imageView.image = storyImage.first
 		
