@@ -5,6 +5,7 @@ import WebKit
 
 protocol StoryViewControllerDelegate {
     func tickBook(bookNumber: Int)
+    func untickBook(bookNumber: Int)
 }
 
 
@@ -14,6 +15,7 @@ class StoryViewController: UIViewController {
     
     @IBOutlet weak var incompleteButton: UIButton!
     @IBAction func incompleteButton(sender: AnyObject) {
+        delegate?.untickBook(1)
     }
     @IBOutlet weak var completeButton: UIButton!
     @IBAction func completeButton(sender: AnyObject) {

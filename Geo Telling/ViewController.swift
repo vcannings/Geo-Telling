@@ -122,6 +122,10 @@ extension ViewController: StoryViewControllerDelegate {
         completeIcon.hidden = false
         
     }
+    
+    func untickBook(bookNumber: Int) {
+        completeIcon.hidden = true
+    }
 }
 
 
