@@ -46,6 +46,9 @@ class ViewController: UIViewController {
 		}
 		
 	}
+	
+	
+	
 	override func shouldAutorotate() -> Bool {
 		// Lock autorotate
 		return false

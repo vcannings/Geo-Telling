@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDz-gr-gFS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="1020"/>
+            <point key="canvasLocation" x="814" y="928"/>
         </scene>
         <!--Story-->
         <scene sceneID="TXi-LF-VDv">
@@ -231,6 +231,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="completeButton:" destination="eLA-kk-epl" eventType="touchUpInside" id="seL-y2-T5Y"/>
+                                    <segue destination="eIw-Aq-NTd" kind="show" identifier="completeStory" id="uqv-W2-pNq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -277,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QRI-8U-a3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="-1171"/>
+            <point key="canvasLocation" x="814" y="-1083"/>
         </scene>
         <!--Locations-->
         <scene sceneID="Wdk-yG-mhY">
@@ -294,22 +295,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cpz-g4-Htn">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180x180.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-RX-K8N">
+                                <rect key="frame" x="210" y="72" width="180" height="180"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Cpz-g4-Htn" firstAttribute="leading" secondItem="AHk-i4-J5S" secondAttribute="leadingMargin" constant="-20" id="Ejx-HB-6LS"/>
+                            <constraint firstItem="Oro-RX-K8N" firstAttribute="top" secondItem="GIc-lA-f9u" secondAttribute="bottom" constant="8" id="Fel-hK-ap7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cpz-g4-Htn" secondAttribute="trailing" constant="-20" id="Lo3-BZ-LhP"/>
                             <constraint firstItem="Cpz-g4-Htn" firstAttribute="top" secondItem="GIc-lA-f9u" secondAttribute="bottom" id="Sse-QB-biN"/>
+                            <constraint firstItem="Oro-RX-K8N" firstAttribute="centerX" secondItem="Cpz-g4-Htn" secondAttribute="centerX" id="e6V-wh-viG"/>
                             <constraint firstItem="E4Y-F5-ee3" firstAttribute="top" secondItem="Cpz-g4-Htn" secondAttribute="bottom" id="kKw-tC-VdF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Locations" id="DOO-Vj-tzo">
                         <barButtonItem key="backBarButtonItem" title="Back" id="rkw-qy-Oe2"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="testImage" destination="Oro-RX-K8N" id="yTS-1I-STt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L18-m9-D5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="1020"/>
+            <point key="canvasLocation" x="1505" y="-421"/>
         </scene>
         <!--Bookshelf-->
         <scene sceneID="k7g-Gu-2jN">
@@ -599,7 +608,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uz4-hj-jb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="-416"/>
+            <point key="canvasLocation" x="1505" y="-1083"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="93X-9Z-aDU">
@@ -641,7 +650,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gO-l7-eHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="248"/>
+            <point key="canvasLocation" x="1505" y="248"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tyk-e2-CIP">
@@ -702,6 +711,7 @@
     </scenes>
     <resources>
         <image name="1024x1024.png" width="1024" height="1024"/>
+        <image name="180x180.png" width="180" height="180"/>
         <image name="ABOUT.png" width="100" height="100"/>
         <image name="BACKGROUND.png" width="640" height="909"/>
         <image name="BOOK FOUR.png" width="80" height="200"/>
@@ -723,6 +733,7 @@
         <image name="nav.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="uqv-W2-pNq"/>
         <segue reference="k7i-RT-YWa"/>
     </inferredMetricsTieBreakers>
 </document>

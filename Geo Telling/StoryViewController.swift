@@ -64,7 +64,16 @@ class StoryViewController: UIViewController {
 		//Setting the default image to the first item in the array
 		
 	}
-    
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+		
+		if segue.identifier == "completeStory" {
+			let vc = segue.destinationViewController as! LocationViewController
+			vc.name = "complete"
+		}
+		
+	}
+	
     func updateImage() {
         imageView.image = storyImage[imageIndex]
 		//constantly updating the image view after swiping
