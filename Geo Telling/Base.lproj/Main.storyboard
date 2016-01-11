@@ -295,30 +295,120 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BACKGROUND.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cpz-g4-Htn">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180x180.png" translatesAutoresizingMaskIntoConstraints="NO" id="Oro-RX-K8N">
-                                <rect key="frame" x="210" y="72" width="180" height="180"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cna-hc-uav">
+                                <rect key="frame" x="0.0" y="64" width="149" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="ti6-Ka-3gj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Three" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-bN-xLy">
+                                <rect key="frame" x="0.0" y="319" width="149" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This installment of this location based storytelling experience can be found at Bournemouth Pier." translatesAutoresizingMaskIntoConstraints="NO" id="v8O-qy-VLL">
+                                <rect key="frame" x="0.0" y="85" width="149" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="ojn-cE-pJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="85" width="149" height="117"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Two" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wdb-sY-1Ar">
+                                <rect key="frame" x="451" y="64" width="149" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="Xdd-EM-KvC">
+                                        <variation key="widthClass=compact" constant="149"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Four" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtQ-FT-fwd">
+                                <rect key="frame" x="451" y="319" width="149" height="21"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This installment of this location based storytelling experience can be found at Brighton Pier." translatesAutoresizingMaskIntoConstraints="NO" id="BxJ-jK-jKu">
+                                <rect key="frame" x="451" y="85" width="149" height="116"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="251" y="85" width="149" height="116"/>
+                                </variation>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="yuA-tz-wLN">
+                                <rect key="frame" x="451" y="85" width="149" height="116"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-uG-tjw">
+                                <rect key="frame" x="451" y="340" width="149" height="116"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="nHO-gm-I2J">
+                                <rect key="frame" x="0.0" y="340" width="149" height="116"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yuA-tz-wLN" secondAttribute="trailing" constant="-20" id="13d-x4-OBx"/>
+                            <constraint firstItem="Cna-hc-uav" firstAttribute="leading" secondItem="v8O-qy-VLL" secondAttribute="leading" id="3M7-vR-h9g"/>
+                            <constraint firstItem="BxJ-jK-jKu" firstAttribute="leading" secondItem="qtQ-FT-fwd" secondAttribute="leading" id="3Re-zn-4pB">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="nHO-gm-I2J" firstAttribute="leading" secondItem="AHk-i4-J5S" secondAttribute="leadingMargin" constant="-20" id="6lh-Jc-iWr"/>
+                            <constraint firstItem="v8O-qy-VLL" firstAttribute="bottom" secondItem="BxJ-jK-jKu" secondAttribute="bottom" id="7cy-ZS-Jar">
+                                <variation key="widthClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="yuA-tz-wLN" firstAttribute="bottom" secondItem="BxJ-jK-jKu" secondAttribute="bottom" id="8he-do-Srh"/>
+                            <constraint firstItem="Cna-hc-uav" firstAttribute="baseline" secondItem="Wdb-sY-1Ar" secondAttribute="baseline" id="9Hd-no-qVq"/>
+                            <constraint firstItem="nHO-gm-I2J" firstAttribute="top" secondItem="mu3-uG-tjw" secondAttribute="top" id="9Qg-IZ-5FF"/>
+                            <constraint firstItem="qtQ-FT-fwd" firstAttribute="trailing" secondItem="BxJ-jK-jKu" secondAttribute="trailing" id="9xd-1P-adu"/>
+                            <constraint firstItem="Wdb-sY-1Ar" firstAttribute="leading" secondItem="BxJ-jK-jKu" secondAttribute="leading" id="C9g-IR-qsm"/>
                             <constraint firstItem="Cpz-g4-Htn" firstAttribute="leading" secondItem="AHk-i4-J5S" secondAttribute="leadingMargin" constant="-20" id="Ejx-HB-6LS"/>
-                            <constraint firstItem="Oro-RX-K8N" firstAttribute="top" secondItem="GIc-lA-f9u" secondAttribute="bottom" constant="8" id="Fel-hK-ap7"/>
+                            <constraint firstItem="Cna-hc-uav" firstAttribute="top" secondItem="GIc-lA-f9u" secondAttribute="bottom" id="IUg-2q-BVa"/>
+                            <constraint firstItem="E4Y-F5-ee3" firstAttribute="top" secondItem="CZd-bN-xLy" secondAttribute="bottom" constant="211" id="LcO-P8-xJg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cpz-g4-Htn" secondAttribute="trailing" constant="-20" id="Lo3-BZ-LhP"/>
+                            <constraint firstItem="CZd-bN-xLy" firstAttribute="trailing" secondItem="v8O-qy-VLL" secondAttribute="trailing" id="M8C-5B-98g"/>
+                            <constraint firstItem="qtQ-FT-fwd" firstAttribute="baseline" secondItem="CZd-bN-xLy" secondAttribute="baseline" id="OEI-9e-ieR"/>
+                            <constraint firstItem="yuA-tz-wLN" firstAttribute="top" secondItem="BxJ-jK-jKu" secondAttribute="top" id="OvH-gG-ZcG"/>
+                            <constraint firstItem="v8O-qy-VLL" firstAttribute="top" secondItem="Cna-hc-uav" secondAttribute="bottom" id="RrY-T3-k7Y"/>
                             <constraint firstItem="Cpz-g4-Htn" firstAttribute="top" secondItem="GIc-lA-f9u" secondAttribute="bottom" id="Sse-QB-biN"/>
-                            <constraint firstItem="Oro-RX-K8N" firstAttribute="centerX" secondItem="Cpz-g4-Htn" secondAttribute="centerX" id="e6V-wh-viG"/>
+                            <constraint firstItem="CZd-bN-xLy" firstAttribute="leading" secondItem="AHk-i4-J5S" secondAttribute="leadingMargin" constant="-20" id="YEW-Oi-yCY"/>
+                            <constraint firstItem="yuA-tz-wLN" firstAttribute="leading" secondItem="BxJ-jK-jKu" secondAttribute="leading" id="a4E-qX-1b9"/>
+                            <constraint firstItem="E4Y-F5-ee3" firstAttribute="top" secondItem="mu3-uG-tjw" secondAttribute="bottom" constant="95" id="f5q-c6-Wt3"/>
+                            <constraint firstItem="Cna-hc-uav" firstAttribute="trailing" secondItem="v8O-qy-VLL" secondAttribute="trailing" id="gDP-0A-jtp"/>
+                            <constraint firstItem="BxJ-jK-jKu" firstAttribute="trailing" secondItem="Wdb-sY-1Ar" secondAttribute="trailing" id="igl-Jj-Q9c"/>
                             <constraint firstItem="E4Y-F5-ee3" firstAttribute="top" secondItem="Cpz-g4-Htn" secondAttribute="bottom" id="kKw-tC-VdF"/>
+                            <constraint firstItem="BxJ-jK-jKu" firstAttribute="trailing" secondItem="AHk-i4-J5S" secondAttribute="trailingMargin" constant="20" id="ocv-7P-OfM"/>
+                            <constraint firstItem="BxJ-jK-jKu" firstAttribute="top" secondItem="v8O-qy-VLL" secondAttribute="top" id="tFE-yJ-c7w"/>
+                            <constraint firstItem="CZd-bN-xLy" firstAttribute="leading" secondItem="v8O-qy-VLL" secondAttribute="leading" id="vZH-6g-9pk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mu3-uG-tjw" secondAttribute="trailing" constant="-20" id="yZ4-1c-lz8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Locations" id="DOO-Vj-tzo">
                         <barButtonItem key="backBarButtonItem" title="Back" id="rkw-qy-Oe2"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="testImage" destination="Oro-RX-K8N" id="yTS-1I-STt"/>
+                        <outlet property="hiddenHint" destination="yuA-tz-wLN" id="z5q-IP-lWP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L18-m9-D5j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1505" y="-421"/>
+            <point key="canvasLocation" x="1504" y="-421"/>
         </scene>
         <!--Bookshelf-->
         <scene sceneID="k7g-Gu-2jN">
@@ -711,7 +801,6 @@
     </scenes>
     <resources>
         <image name="1024x1024.png" width="1024" height="1024"/>
-        <image name="180x180.png" width="180" height="180"/>
         <image name="ABOUT.png" width="100" height="100"/>
         <image name="BACKGROUND.png" width="640" height="909"/>
         <image name="BOOK FOUR.png" width="80" height="200"/>
@@ -722,6 +811,7 @@
         <image name="FILLER BOOK.png" width="30" height="200"/>
         <image name="FILLER BOOKS TWO.png" width="200" height="160"/>
         <image name="FILLER BOOKS.png" width="82" height="210"/>
+        <image name="HIDDEN.png" width="149" height="116"/>
         <image name="LABEL THREE.png" width="122" height="30"/>
         <image name="LABEL TWO.png" width="112" height="30"/>
         <image name="LABEL.png" width="200" height="30"/>
