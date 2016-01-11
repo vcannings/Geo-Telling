@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, supportedInterfaceOrientationsForWindow window: UIWindow?) -> UIInterfaceOrientationMask {
 		return UIInterfaceOrientationMask.Portrait
+		//Application can only display in portrait mode
 	}
 	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -22,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		UITabBar.appearance().barTintColor = UIColor(red: 245.0/255.0, green: 245.0/255.0, blue: 245.0/255.0, alpha: 1.0)
 		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
 		return true
+		//Setting the visuals of the application to have an orange Navigation Bar with white text
 	}
 
 	func applicationWillResignActive(application: UIApplication) {

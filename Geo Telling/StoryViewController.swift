@@ -6,9 +6,8 @@ import WebKit
 protocol StoryViewControllerDelegate {
     func tickBook(bookNumber: Int)
     func untickBook(bookNumber: Int)
-	//calls the dekegate protocols from the main view controller, sends information when buttons are pressed
+	//calls the delegate protocols from the main view controller, sends information when buttons are pressed
 }
-
 
 class StoryViewController: UIViewController {
 	
@@ -24,7 +23,6 @@ class StoryViewController: UIViewController {
         delegate?.tickBook(1)
 		//shows complete icon if hidden
     }
-   
 	
 	var storyImage:[UIImage] = [
 		UIImage(named: "PAGE ONE.png")!,
@@ -38,11 +36,12 @@ class StoryViewController: UIViewController {
 		UIImage(named: "PAGE NINE.png")!,
 		UIImage(named: "PAGE TEN.png")!,
 	]
-	//an array of images stored in an image view, navigated by changing the array index
+	//an array of images stored in an image view, navigated by changing the array index. This is the story content of the Geocache
     
 	var imageIndex = 0
 	
 	@IBOutlet weak var imageView: UIImageView!
+	//How the images are displayed
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -62,7 +61,6 @@ class StoryViewController: UIViewController {
 		
 		imageView.image = storyImage.first
 		//Setting the default image to the first item in the array
-		
 	}
 	
 	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -70,19 +68,20 @@ class StoryViewController: UIViewController {
 		if segue.identifier == "completeStory" {
 			let vc = segue.destinationViewController as! LocationViewController
 			vc.name = "complete"
+			//Setting another segue to update the LocationViewController when the first story has been marked as complete
 		}
-		
 	}
 	
     func updateImage() {
         imageView.image = storyImage[imageIndex]
 		//constantly updating the image view after swiping
         if imageIndex == 9 {
+		//as there are 10 images in the array, 9 is the last image as the index starts at 0
         self.completeButton.hidden = false
         self.incompleteButton.hidden = false
         } else {
-            self.completeButton.hidden = true
-            self.incompleteButton.hidden = true
+		self.completeButton.hidden = true
+		self.incompleteButton.hidden = true
         }
 		//making the complete/incomplete buttons visible if the user reaches the last image
     }
@@ -104,8 +103,5 @@ class StoryViewController: UIViewController {
         }
        //lets the user swipe left until they reach the last image in the array
     }
-
-	
-	
 }
 

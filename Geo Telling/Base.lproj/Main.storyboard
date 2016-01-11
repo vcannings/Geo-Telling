@@ -352,14 +352,14 @@
                                     <rect key="frame" x="251" y="85" width="149" height="116"/>
                                 </variation>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="yuA-tz-wLN">
-                                <rect key="frame" x="451" y="85" width="149" height="116"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-uG-tjw">
                                 <rect key="frame" x="451" y="340" width="149" height="116"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="nHO-gm-I2J">
                                 <rect key="frame" x="0.0" y="340" width="149" height="116"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HIDDEN.png" translatesAutoresizingMaskIntoConstraints="NO" id="yuA-tz-wLN">
+                                <rect key="frame" x="451" y="85" width="149" height="116"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
