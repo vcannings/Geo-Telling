@@ -74,7 +74,7 @@ extension ViewController: CLLocationManagerDelegate {
 		print("Leaving \(region.identifier)")
 		self.bookButton.hidden = true
 		bookImage.image = UIImage(named: "BOOK FOUR.png")
-		//navigationController?.popToRootViewControllerAnimated(true)
+		navigationController?.popToRootViewControllerAnimated(true)
 		//When the user exits the region, push them back to the main view. Comment out this function if you would like to spend more time on the StoryViewController page
 		let refreshAlert = UIAlertController(title: "Story Unavailable", message: "You have left the appropriate region of the story and can no longer view it. Return to it's location to continue reading (displayed beneath the book on the shelf).", preferredStyle: UIAlertControllerStyle.Alert)
 		//Notification will pop up when the user leaves the region of the geocache to tell them that the story is no longer available unless they return to the region
